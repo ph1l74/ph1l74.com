@@ -1,0 +1,29 @@
+.phlcom-block {
+    margin-top: 36px;
+    grid-column: 5/9;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(min-content, max-content);
+    font-size: 1.2rem;
+    color: var(--color-black);
+}
+
+.phlcom-block-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-bottom: 24px;
+    grid-column: 1/5;
+}
+
+.phlcom-block-content {
+    grid-column: 1/5;
+    display: grid;
+    grid-gap: 24px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(min-content, max-content);
+}
+
+.phlcom-footer {
+
+}

@@ -1,0 +1,68 @@
+.phlcom-navigation {
+    grid-column: 4/10;
+    padding: 4px;
+    margin-top: 12px;
+    display: inline;
+}
+
+a.phlcom-nav-link {
+    font-family: 'Roboto Flex', sans-serif;
+    color: var(--color-white);
+    text-decoration: none;
+    font-weight: 1000;
+    text-transform: capitalize;
+    margin-right: 24px;
+    font-size: 1.2em;
+    position: relative;
+    display: inline-block;
+}
+
+a.phlcom-nav-link::before {
+    content: '';
+    position: absolute;
+    width: 110%;
+    background-color: var(--color-accent);
+    height: 4px;
+    left: -5%;
+    bottom: -4px;
+}
+
+
+.phlcom-nav-link-hidden {
+    visibility: hidden;
+    opacity: 0;
+    display: inline;
+    width: 110%;
+}
+
+
+.phlcom-nav-link-title {
+    z-index: 1;
+    position: absolute;
+    display: inline;
+}
+
+
+a.phlcom-nav-link::before {
+    transition: all 0.1s ease-in
+}
+
+a.phlcom-nav-link:hover::before {
+    height: 25%;
+    bottom: 0px;
+}
+
+a.phlcom-nav-link-brand {
+    float: right;
+    font-family: 'Roboto Flex', sans-serif;
+    color: var(--color-white);
+    text-decoration: none;
+    font-weight: 1000;
+    text-transform: capitalize;
+    margin-right: 24px;
+    font-size: 1.3em;
+}
+
+.phlcom-phlart-logo {
+    width: 94px;
+}
