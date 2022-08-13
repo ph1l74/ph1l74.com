@@ -31,6 +31,8 @@
     grid-column: 1/2;
     text-transform: uppercase;
     font-size: 1.1rem;
+    text-align: right;
+    margin-top: 4px;
 }
 
 .phlcom-block-projects-items {
@@ -53,8 +55,8 @@
 .phlcom-block-webapps-el {
     grid-column: 1/5;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: minmax(min-content, max-content);
+    grid-template-columns: 7rem repeat(3, 1fr);
+    grid-auto-rows: 7rem;
     margin-bottom: 12px;
 }
 

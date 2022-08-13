@@ -29,5 +29,20 @@ export const initState = {
         { title: "SPOSI", description: 'Lorem ipsum', href: '/sposi' },
         { title: "SPOSI", description: 'Lorem ipsum', href: '/sposi' },
         { title: "SPOSI", description: 'Lorem ipsum', href: '/sposi' }
-    ]
+    ],
+    contacts: [
+        {
+            title: 'socials',
+            items: [
+                { title: 'github', href: 'https://github.com/ph1l74' }
+            ]
+        },
+        {
+            title: 'for HRs',
+            items: [
+                { title: 'LinkedIn', href: 'https://filatique.ru' },
+                { title: 'CV', href: 'https://filatique.ru' }
+            ]
+        },
+    ],
 };

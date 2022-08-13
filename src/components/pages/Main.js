@@ -1,4 +1,5 @@
 import BriefInfo from '../blocks/BriefInfo';
+import Contacts from '../blocks/Contacts';
 import Projects from '../blocks/Projects';
 import WebApps from '../blocks/WebApps';
 import Footer from '../Footer';
@@ -12,6 +13,7 @@ const Main = () => {
             <BriefInfo />
             <Projects />
             <WebApps />
+            <Contacts />
             <Footer />
         </div>
     )

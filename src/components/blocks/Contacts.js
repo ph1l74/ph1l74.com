@@ -3,15 +3,27 @@ import Block from "../Block";
 import Link from "../Link";
 
 const Contacts = () => {
-    return (
-        <Block title='Brief Info'>
-            <div className="phlcom-block-info">{briefInfoText}</div>
-            <div className="phlcom-block-info-photo">
-                <img src="/img/avatar.jpg" alt="avatar" />
-            </div>
-            <div>
 
-                <Link el={{ title: 'more', href: "/about" }} customStyle={{ color: 'var(--color-black)' }} />
+    const contactsData = useSelector(state => state.store.contacts);
+
+    return (
+        <Block title='Contacts'>
+            <div className="phlcom-block-projects">
+                {contactsData.map((projectCat, i) => (
+                    <div className="phlcom-block-projects-el" key={`projectCat_${i}`}>
+                        <div className="phlcom-block-projects-cat">{projectCat.title}</div>
+                        <div className="phlcom-block-projects-items">
+                            {
+                                projectCat.items.map((project, j) =>
+                                    <div key={`project_${j}`}>
+                                        <Link el={{ title: project.title, href: project.href }} customStyle={{ color: 'var(--color-black' }} />
+                                    </div>
+                                )
+                            }
+                        </div>
+
+                    </div>
+                ))}
             </div>
         </Block>
     )
