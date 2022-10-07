@@ -14,7 +14,7 @@ const BriefInfo = () => {
             </div>
             <div>
 
-                <Link el={{ title: 'more', href: "/about" }} customStyle={{ color: 'var(--color-black)' }} />
+                {/* <Link el={{ title: 'more', href: "/about" }} customStyle={{ color: 'var(--color-black)' }} /> */}
             </div>
         </Block>
     )

@@ -1,6 +1,6 @@
 const Contacts = () => {
     return (
-        <div className="phlcom-main">
+        <div className="phlcom-contacts">
             
         </div>
     )

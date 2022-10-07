@@ -1,19 +1,20 @@
-import './Block.css'
-import './BlocksStyles.css'
+import "./Block.css";
+import { motion } from "framer-motion";
+import "./BlocksStyles.css";
+import { animations } from "../constants";
 
 const Block = ({ title, children }) => {
-    return (
-        <div className="phlcom-block">
-            {
-                title ?
-                    <div className="phlcom-block-title">{title}</div>
-                    : null
-            }
-            <div className='phlcom-block-content'>
-                {children}
-            </div>
-        </div>
-    )
-}
+  return (
+    <motion.div
+      className="phlcom-block"
+      variants={animations.defaultBlock}
+      initial="hidden"
+      animate="visible"
+    >
+      {title ? <div className="phlcom-block-title">{title}</div> : null}
+      <div className="phlcom-block-content">{children}</div>
+    </motion.div>
+  );
+};
 
 export default Block;

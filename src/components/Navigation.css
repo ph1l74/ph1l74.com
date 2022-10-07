@@ -47,6 +47,10 @@ a.phlcom-nav-link::before {
     transition: all 0.1s ease-in
 }
 
+a.phlcom-nav-link.active:before {
+    height: 130%;
+}
+
 a.phlcom-nav-link:hover::before {
     height: 25%;
     bottom: 0px;
