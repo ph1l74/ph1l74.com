@@ -1,5 +1,11 @@
 import phllogo from "../assets/phl-art-logo.svg";
 
+export const PAGES = {
+  HOME: "HOME",
+  CONTACTS: "CONTACTS",
+  ABOUT: "ABOUT",
+};
+
 export const initState = {
   links: [
     { title: "about", href: "/about" },
@@ -50,6 +56,7 @@ export const initState = {
       ],
     },
   ],
+  currentPage: PAGES.HOME,
 };
 
 export const animations = {

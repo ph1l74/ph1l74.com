@@ -4,7 +4,15 @@ import { initState } from '../constants'
 const slice = createSlice({
     name: "slice",
     initialState: initState,
-    reducers: {}
+    reducers: {
+        setCurrentPage(state, action) {
+            state.currentPage = action.payload;
+          },
+    }
 })
 
-export default slice.reducer
+export default slice.reducer;
+export const {
+    setCurrentPage
+  } = slice.actions;
+  
