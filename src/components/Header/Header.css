@@ -1,0 +1,15 @@
+.phlcom-header {
+    background-color: var(--color-grey);
+    grid-column: 1/13;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin-bottom: 36px
+}
+
+.phlcom-header-title {
+    grid-column: 4/10;
+    color: var(--color-white);
+    font-size: 3em;
+    margin: 5rem 0;
+}
