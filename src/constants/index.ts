@@ -124,9 +124,7 @@ export const animations = {
       opacity: 1,
       y: 0,
       transition: {
-        delay: 1,
         duration: 1,
-        delayChildren: 1,
         staggerChildren: 0.15,
       },
     },
@@ -152,6 +150,27 @@ export const animations = {
     },
   },
 
+  contactsCatergory: {
+    hidden: { y: -20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        delay: 2.5,
+        delayChildren: 2.5,
+        staggerChildren: 0.15,
+      },
+    },
+  },
+
+  contactsLinkItem: {
+    hidden: { y: -20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+    },
+  },
+
   webAppsContainer: {
     hidden: { opacity: 1, y: 0 },
     visible: {
@@ -160,7 +179,7 @@ export const animations = {
       transition: {
         delay: 2,
         duration: 0.5,
-        delayChildren: 0.5,
+        delayChildren: 2,
         staggerChildren: 0.15,
       },
     },

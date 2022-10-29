@@ -3,10 +3,10 @@ import { useSelector } from 'react-redux';
 import { Block } from '@/components/Block/';
 import { Link } from '@/components/Link/';
 import { animations } from '@/constants/';
-import { StateType } from '@/types/';
+import { ContactType, StateType } from '@/types/';
 
 const ContactsBlock: React.FC = () => {
-  const contactsData = useSelector(
+  const contactsData: ContactType[] = useSelector(
     (state: { store: StateType }) => state.store.contacts
   );
 
@@ -18,20 +18,20 @@ const ContactsBlock: React.FC = () => {
         initial='hidden'
         animate='visible'
       >
-        {contactsData.map((projectCat, i) => (
+        {contactsData.map((contactCat, i) => (
           <motion.div
             className='phlcom-block-projects-el'
             key={`projectCat_${i}`}
-            variants={animations.projectsCatergory}
+            variants={animations.contactsCatergory}
           >
-            <div className='phlcom-block-projects-cat'>{projectCat.title}</div>
+            <div className='phlcom-block-projects-cat'>{contactCat.title}</div>
             <div className='phlcom-block-projects-items'>
-              {projectCat.items.map((project, j) => (
-                <div key={`project_${j}`}>
+              {contactCat.items.map((contact, j) => (
+                <div key={`contact_${j}`}>
                   <Link
-                    el={{ title: project.title, href: project.href }}
+                    el={{ title: contact.title, href: contact.href }}
                     customStyle={{ color: 'var(--color-black' }}
-                    animation={animations.projectsLinkItem}
+                    animation={animations.contactsLinkItem}
                   />
                 </div>
               ))}
