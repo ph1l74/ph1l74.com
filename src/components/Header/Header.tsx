@@ -5,10 +5,12 @@ import { Navigation } from '@/components/Navigation';
 import { StateType } from '@/types';
 import './Header.css';
 
-const HeaderComponent: React.FC = () => {
-  const title = useSelector(
-    (state: { store: StateType }) => state.store.headerTitle
-  );
+type HeaderComponentProps = {
+  title?: string;
+};
+
+const HeaderComponent: React.FC<HeaderComponentProps> = (props) => {
+  const { title } = props;
 
   return (
     <motion.div
@@ -28,7 +30,7 @@ const HeaderComponent: React.FC = () => {
         animate='visible'
         variants={animations.headerTitle}
       >
-        {title}
+        {title ? title : ''}
       </motion.div>
     </motion.div>
   );

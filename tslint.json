@@ -13,7 +13,8 @@
         "import-name": [
             true,
             {
-                "react": "React"
+                "react": "React",
+                "react-dom/client" : "ReactDOM"
             }
         ],
         "trailing-comma": [

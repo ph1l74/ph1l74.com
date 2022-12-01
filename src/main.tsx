@@ -10,7 +10,6 @@ const rootEl = document.getElementById('root');
 if (rootEl) {
   const root = ReactDOM.createRoot(rootEl);
 
-  console.log(root);
   root.render(
     <React.StrictMode>
       <Provider store={store}>

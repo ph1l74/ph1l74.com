@@ -1,15 +1,24 @@
 import * as React from 'react';
-import { useSelector } from 'react-redux';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { MainPage } from '@/pages/Main';
-import { StateType } from './types';
+import { ContactsPage } from '@/pages/Contacts';
+import { AboutPage } from '@/pages/About';
+import { AnimatePresence } from 'framer-motion';
 
 const App: React.FC = () => {
-  const currentPage: string = useSelector(
-    (state: { store: StateType }) => state.store.currentPage
+  return (
+    // <AnimatePresence mode='wait'>
+      <Router>
+        <Routes>
+          <Route path='/'>
+            <Route index element={<MainPage />} />
+            <Route path='contacts' element={<ContactsPage />} />
+            <Route path='about' element={<AboutPage />} />
+          </Route>
+        </Routes>
+      </Router>
+    // </AnimatePresence>
   );
-
-  return <Router>{<MainPage />}</Router>;
 };
 
 export default App;

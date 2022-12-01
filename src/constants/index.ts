@@ -1,12 +1,5 @@
 import phlArtLogoSvg from '../assets/phl-art-logo.svg';
-import {
-  ContactType,
-  LinkType,
-  PagesType,
-  ProjectType,
-  StateType,
-  WebAppType,
-} from '../types';
+import { PagesType, StateType } from '../types';
 
 export const PAGES: PagesType = {
   HOME: 'HOME',
