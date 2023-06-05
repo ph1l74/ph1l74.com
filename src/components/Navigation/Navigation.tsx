@@ -20,7 +20,7 @@ const NavigationComponent = () => {
       ))}
       <Link
         el={{ title: 'Filat Astakhov', href: '/' }}
-        customStyle={{ fontSize: '24px', float: 'right' }}
+        customStyle={{ fontSize: '24px', marginLeft: 'auto' }}
         animation={{ ...animations.navLinkItem, ...{ delay: 1.25 } }}
       />
     </motion.div>
