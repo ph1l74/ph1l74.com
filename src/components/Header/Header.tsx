@@ -15,7 +15,7 @@ const HeaderComponent: React.FC<HeaderComponentProps> = (props) => {
   return (
     <motion.div
       className='phlcom-header'
-      initial={{ background: '#000000', position: 'absolute', height: '100vh' }}
+      initial={{ height: '100vh' }}
       animate={{
         background: 'var(--color-grey)',
         position: 'inherit',
