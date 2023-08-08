@@ -7,7 +7,7 @@ import { AnimatePresence } from 'framer-motion';
 
 const App: React.FC = () => {
   return (
-    // <AnimatePresence mode='wait'>
+    <AnimatePresence mode='wait'>
       <Router>
         <Routes>
           <Route path='/'>
@@ -17,7 +17,7 @@ const App: React.FC = () => {
           </Route>
         </Routes>
       </Router>
-    // </AnimatePresence>
+    </AnimatePresence>
   );
 };
 
